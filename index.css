@@ -1,0 +1,85 @@
+
+
+#me{
+    font-size: 58px;
+    color: red;
+    text-align: center;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.swiper{
+    width: 520px;
+    height: 280px;
+    border: 1px solid black;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+}
+.swiper ul{
+    width: 9999px;
+    overflow: hidden;
+    /*清除浮动*/
+    /*transition: 1s;*/
+}
+.swiper li{
+    float: left;
+    
+    /*width: 520px;*/
+}
+/*按钮*/
+.btn{
+    position: absolute;
+    top: 50%;
+    left: -4px;
+    width: 30px;
+    height: 30px;
+    
+    margin-top: -15px;
+    text-align: center;
+    line-height: 27px;
+    border-radius: 50%;
+    font-size: 26px;
+    color: #fff;
+    background: #666;
+    opacity: .5;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.next{
+    left: 494px;
+}
+.transi{
+    transition: 500ms;
+}
+/*小圆点*/
+ul.item{
+    width: 48px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    /*清除浮动*/
+    overflow: hidden;
+    z-index: 1000;
+}
+.item li{
+    float: left;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    background: #fff;
+    border-radius: 50%;
+    margin: 0 3px;
+}
+li.active{
+    background: gray;
+}
+
+
+
